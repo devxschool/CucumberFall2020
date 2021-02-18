@@ -1,0 +1,21 @@
+Vladimir - Junit vs TestNG?
+Junit and TestNG are both testing tools where we can run methods as tests we can use
+@Test annotation.
+
+TestNG - is newer and has better annotations than Junit.
+with TestNG we can do parallel execution.
+
+we can use both of them for unit tests.
+
+on my current job we are using testNg for our testing. with our QA team we created our framework from scratch.
+from my previous job I have experience in building framework using Junit.
+
+10X Rule - Grant Cardone
+Sell or be Sold? - Grant Cardone
+
+Maven -> Java project and depedency management tool. it's also a project building building.
+
+
+
+
+
