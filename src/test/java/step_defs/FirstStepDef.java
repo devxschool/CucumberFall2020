@@ -6,7 +6,6 @@ import cucumber.api.java.en.When;
 
 public class FirstStepDef {
 
-
     /** Cucumber uses regex to map feature file steps with glue code step definitons **/
 
     @Given("^User JohnDoe with password abc(\\d+) is registered$")
@@ -28,4 +27,29 @@ public class FirstStepDef {
     }
 
 
+    @When("^User JohnDoe with password wrongPass logs in$")
+    public void userJohnDoeWithPasswordWrongPassLogsIn() {
+        System.out.println("John Doe with pass WrongPass Logged in");
+    }
+
+    @Then("^User should be given login error message$")
+    public void userShouldBeGivenLoginErrorMessage() {
+        System.out.println("Invalid Password");
+    }
+
+
+    @Given("^User tim@apple\\.com with password timceo is registered$")
+    public void userTimAppleComWithPasswordTimceoIsRegistered() {
+        System.out.println("tim@apple.com with timeceo is registering");
+    }
+
+    @When("^User tim@apple\\.com with password timceo logs in$")
+    public void userTimAppleComWithPasswordTimceoLogsIn() {
+        System.out.println("tim@apple.com with timeceo logs in");
+    }
+
+    @Then("^User time@apple\\.com should be navigated to HomePage$")
+    public void userTimeAppleComShouldBeNavigatedToHomePage() {
+        System.out.println("tim@apple.com should on the home page");
+    }
 }

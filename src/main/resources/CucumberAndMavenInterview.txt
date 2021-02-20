@@ -15,7 +15,49 @@ Sell or be Sold? - Grant Cardone
 
 Maven -> Java project and depedency management tool. it's also a project building building.
 
+Liudmyla - Which operating system do you have working on?
+Linux - my main OS at work. - RedHat 7.
+
+Have experience in MacOs and
+Windows - 08, 11.
 
 
+What purpose have you used Linux for?
+Commands linux - navigate the system. compile java files.
+create or delete folders.
+for troubleshooting mostly.
+how to check which apps are running - I use ps.
+How to check if a specific app is running or not? ps -ef | grep AppName.
+to stop an app - kill -9 PID
 
 
+Test Cases must be independent from each other.
+What are the most commond mistakes SDETs make which make test cases depedent from each other?
+1. Rely on a result from previous test.
+2. Tests dont clean up after themselves. - Have a @Before annotation which sets the app under test into a default state for
+each test.
+3. Tests are faster than the app under test. -  Let the app under test finish prossing commands sent from every test before
+test framework jumps to the next test. Waits.
+
+
+TestNG:
+Groups to group set of tests.
+How do you setup regression and smoke tests?
+1. Write tests in test file
+2. add each test to smoke and regression groups.
+3. in xml file I am separating them by groups. two separate xml files one for smoke, one for regression.
+4. Your biggest accomplished using TestNG. Inspired by Junit, more and better features. DataProvier, Parametization.
+TestNG is better than Junit.
+
+In my company with my team we implemented parallel testing that saved us time. 4 hours before
+now be brought the same number(1200) of tests to 2 hrs.
+
+
+Cucumber:
+is a tool that support behavior driven development. Test in cucumber written in plain English.
+in cucumber we have feature file which contaitns our tests one feature file per functionality there we write
+our test scenarios.
+
+problem? enables stakeholder to participate in the process.
+
+Step definition - java glue code which is mapped to corresponiding feature file step.

@@ -57,3 +57,18 @@ Cucumber masks the technical testing steps with the help of Gherkin Language. in
 to map those gherkin steps to a java code Cucumber uses step definitons. 
 
 Step definition is a java glue code which maps to a corresponding feature file step.
+
+
+
+###Best Practices (Designing Dynamic Steps)
+1. Design step defs in a dynamic way so that the same step can be reused so many time for the same action
+but the test data should be parameterized. use Strings, doubles, chars.
+
+2. If there are pre conditions steps repeating in every scenarios within a feature we should use 
+Background. Helps us avoid repeation.
+Steps in Background will run before every scenario of the Feature file.
+
+3. If there multiple test scenarios that are performing the same exact test with different test 
+data. Use Scenario Outlines with Example table.
+each row in an example table represents one scenario..
+This Helps putting 
