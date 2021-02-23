@@ -61,3 +61,46 @@ our test scenarios.
 problem? enables stakeholder to participate in the process.
 
 Step definition - java glue code which is mapped to corresponiding feature file step.
+
+Andrei - Interface vs Abstract classes?
+
+Interface is a the concept of OOP in Java. -> 1. Polymorphism - Dynamic.  Static.
+
+interface allows us achieve multiple inheritance. we can implement mutliple interfaces
+by a child class.
+
+Bank account Interface
+USBank
+UKBank
+MexicoBank
+
+static and final  variables.
+you can not instantiate interface directly.
+interface is useless without implementations.
+
+Car
+Bmw
+Mercedes
+Audi
+
+Car smallCar = new Bmw(); (top casting).
+
+Abstraction is a process of hiding irrelavant info from the user.
+In abstract class you have abtract methods too they dont have implementations.
+
+if you dont want to implement the method the class must be declared - abstract
+
+overloading() -> same name different params.
+
+
+Background in cucumber
+if there are precondtions steps that are repeating in each scenario within the feature file we can use background.
+Avoid code repetition. -> better maintainability.
+Allows you to add some context to scenarios ->
+
+Usually have more than 1 given.
+
+
+Scenario outline - running the same test against multiple test data.
+we use variables and example table
+each row represents one test case data.

@@ -72,3 +72,26 @@ Steps in Background will run before every scenario of the Feature file.
 data. Use Scenario Outlines with Example table.
 each row in an example table represents one scenario..
 This Helps putting 
+
+
+###Data tables 
+There are a lot of functionalities that take a list of objects
+as parameters. 
+
+ex: 
+Accounting app.
+Give report or calculate tax.
+
+//for this functionality to calucate the report we need to
+provide List of all invoices. 
+
+report(List<Invoice> invoices)
+
+
+
+###All Cucumber questions
+1.
+2.
+3.
+4.
+5.

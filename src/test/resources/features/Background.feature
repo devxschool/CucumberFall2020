@@ -9,7 +9,7 @@
 Feature: Avoiding Repetition
 
     ##We can put all repeating preconditonal steps here
-  ##only one Background per file
+    ##only one Background per file
   Background:
     Given User "johnDoe@gmail.com" with password "ExtreamnelyHardPa$$" is registered
     When User "johnDoe@gmail.com" with password "ExtreamnelyHardPa$$" logs in
