@@ -1,6 +1,6 @@
 Feature: AppleStore with Scenario Outlines
 
-
+  @smoke
   Scenario Outline: apple store buy
     Given Apple Store has <amount> "<item>"
     When User buys <buyAmount> "<item>"

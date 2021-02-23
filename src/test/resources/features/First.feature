@@ -1,5 +1,5 @@
+@smoke
 Feature: Amazon e-commerce Login
-
   Scenario: Login with valid username and valid password
     Given User JohnDoe with password abc123 is registered
     When User JohnDoe with password abc123 logs in
@@ -22,7 +22,7 @@ Feature: Amazon e-commerce Login
     When User tim@apple.com with password timceo logs in
     Then User time@apple.com should be navigated to HomePage
 
-
+  @ignore
   Scenario: Login Gmail
     Given User test@gmail.com with password somePss is registered
     When User test@gmail.com with password somePss logs in

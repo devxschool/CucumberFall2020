@@ -87,6 +87,35 @@ provide List of all invoices.
 
 report(List<Invoice> invoices)
 
+Data table are row and column table on a feature file scenario
+that is passed to a step def:
+There are 3 ways of passing data table to step defs
+
+1. Plain cucumber DataTable class(object) which has methods
+to convert the data table to list of objects or list of maps
+
+2. Passing the List<Map<String, String>> directly
+3. Most popular one is to pass List<Object) directly.
+
+###Difference between DataTable vs Example table.
+Example table is dependent on Scenario Outline, so it only can
+be used with that pair. 
+
+
+Each row in example table represent one scenario which means 
+all steps in the scenario ouline will be executed same 
+amount of times as there are number of rows in the Example table.
+
+
+DataTable belongs to one step only. 
+It is a way of passing list of Objects into the step def. 
+
+
+
+###Cucumber Junit(TestNG)
+1. Junit in a cucumber framework is used of validations(assertions)
+2. Setting up runner classes. - Run multiple test classes. 
+Running(Scanning) multiple feature files.
 
 
 ###All Cucumber questions

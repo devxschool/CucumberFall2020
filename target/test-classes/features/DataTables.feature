@@ -1,6 +1,5 @@
 Feature: Test with data table
 
-
   Scenario: No Data Table - Bad
     Given User creates the invoice with amount 200.00 and name "Spoon"
     And User creates the invoice with amount 222.00 and name "Iphone"
@@ -31,7 +30,7 @@ Feature: Test with data table
     When User sends the above invoices
     Then User should have 522 in total invoices report
 
-
+ @smoke
   Scenario: Data Table - List<Object> right away. In this case List<Invoice> invoices
     Given the following invoices are created object
       | invoiceAmount | invoiceName |
@@ -40,17 +39,3 @@ Feature: Test with data table
       | 100           | Ipad        |
     When User sends the above invoices
     Then User should have 522 in total invoices report
-
-
-
-
-
-
-
-
-
-
-
-
-
-

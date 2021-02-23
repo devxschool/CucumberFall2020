@@ -5,7 +5,7 @@
   #10 have different ones.
   #create 2 feature file leverage background in one them
   #and keep the other 10 as is
-
+@smoke
 Feature: Avoiding Repetition
 
     ##We can put all repeating preconditonal steps here
@@ -15,12 +15,12 @@ Feature: Avoiding Repetition
     When User "johnDoe@gmail.com" with password "ExtreamnelyHardPa$$" logs in
     And User "johnDoe@gmail.com" should be navigated to HomePage
 
-
+  @login
   Scenario: Integer Params - Buy functionality
     And User buys 20 "Iphones"
     Then User should have 20 "Iphones"
 
-
+  @ignore
   Scenario: Double Params - Buy functionality
     When User buys 20 "Iphones"
     Then User total should be $2000.55

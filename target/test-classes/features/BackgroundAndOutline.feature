@@ -20,7 +20,7 @@ Feature: Combine Scenario Outline and Background
       | 80     | Watch  | 10        | 70                    |
       | 11     | Mac    | 10        | 1                     |
 
-
+  @smoke
   Scenario: Integer Params - Buy functionality
     And User buys 20 "Iphones"
     Then User should have 20 "Iphones"

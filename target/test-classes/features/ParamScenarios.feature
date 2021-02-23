@@ -5,7 +5,7 @@ Feature: Login Scenarios Parameterized
     When User "tim@apple.com" with password "timceo" logs in
     Then User "time@apple.com" should be navigated to HomePage
 
-
+  @smoke
   Scenario: Login with params 2
     Given User "johnDoe@gmail.com" with password "ExtreamnelyHardPa$$" is registered
     When User "johnDoe@gmail.com" with password "ExtreamnelyHardPa$$" logs in
@@ -17,7 +17,7 @@ Feature: Login Scenarios Parameterized
     When User "bill@outlook.com" with password "1242World" logs in
     Then User should be given login error message
 
-
+  @hello
   Scenario: Integer Params - Buy functionality
     Given User "johnDoe@gmail.com" with password "ExtreamnelyHardPa$$" is registered
     When User "johnDoe@gmail.com" with password "ExtreamnelyHardPa$$" logs in
