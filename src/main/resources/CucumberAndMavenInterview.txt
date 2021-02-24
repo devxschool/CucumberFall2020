@@ -104,3 +104,39 @@ Usually have more than 1 given.
 Scenario outline - running the same test against multiple test data.
 we use variables and example table
 each row represents one test case data.
+
+
+
+Assel -
+What is cucumber?
+BDD test tool. One the greatest tools for automation. Gives Exposure to non technical peers.
+
+Cucumber testing focuses on end users.  it can be integrated with Junit or TestNG for assertions and Runner classes.
+Tests are written in feature file populated with scenarios in gherkin language. which is
+Given
+When
+Then
+And -> avoid repeating Given, When, Then.
+
+Cucumber provides many features that
+Background - to avoid precondition repeations.
+Focus on the functionality under test.
+
+Scenario Outline: Making sure we are executing the same test scenario with multiple test data. Examples Table where each row
+in example table represent one scenario.
+
+Data Tables - is similar example table, but it's tied to only one step. Will be executed same amount of times.
+Belongs to only one step which is a list of Objects.
+3 ways of passing the data tables to step defs - Datatables, List<Map<String, String>> List<Object>
+
+How do you setup your test suites(Smoke or Regression)?
+@RunWith -> Junit Runner
+Cucumber.class
+
+Cucumber.Options() helps us setup test configs.
+we need to tell the runner which feature files to scan
+glue - tell the runner where to look for step defs.
+tags - filtering our tests. if you want to exclude some tests ~@tags.
+if you want to run ||, && "";
+
+

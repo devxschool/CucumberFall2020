@@ -1,5 +1,7 @@
 Feature: Test with data table
 
+
+  @smoke
   Scenario: No Data Table - Bad
     Given User creates the invoice with amount 200.00 and name "Spoon"
     And User creates the invoice with amount 222.00 and name "Iphone"
@@ -7,7 +9,7 @@ Feature: Test with data table
     And User creates the invoice with amount 100.00 and name "Bike"
     And User creates the invoice with amount 212.00 and name "Bike"
     When User sends the above invoices
-    Then User should have 422 in total invoices report
+    Then User should have 4222 in total invoices report
 
 ##List<List<String>>
   ##2,1

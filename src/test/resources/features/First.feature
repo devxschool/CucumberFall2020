@@ -22,7 +22,7 @@ Feature: Amazon e-commerce Login
     When User tim@apple.com with password timceo logs in
     Then User time@apple.com should be navigated to HomePage
 
-  @ignore
+  @smoke
   Scenario: Login Gmail
     Given User test@gmail.com with password somePss is registered
     When User test@gmail.com with password somePss logs in

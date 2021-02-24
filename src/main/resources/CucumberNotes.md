@@ -118,9 +118,39 @@ It is a way of passing list of Objects into the step def.
 Running(Scanning) multiple feature files.
 
 
+###Before and After annotations A.k.a Before and After Hooks. 
+Before hook is a method that is usually used for setting up preconditional test data, enviroment etc. for
+all of the tests in the suite. 
+
 ###All Cucumber questions
-1.
-2.
-3.
+1. Difference between @Before vs Background. ()
+   @Before annotation is a global before hook which is/can be applied to all feature files 
+   @Before is application specific
+   
+   Backgorund is specific to only one Feature file.
+   Background is feature specific.
+   
+   If there is a @before and Background -> @before runs first.
+
+2. Tell some disadvantages of your framework, specifically of Cucumber.  
+  As you know Cucumber doesnt provide it's own runner thus we have to Integrate Junit or TestNG with
+  CUcumber. In my most recent project we are using Junit with Cucumber, bc 
+  IMO(in my opinion, IMHO(in my huble opinion)) Cucumber provides same 
+  features that TestNG provides but they are way for flexible. 
+  
+  So when setting up a Junit Runner and running the smoke or regression suite Junit reports counts 
+  number of steps executed as number of tests run. While it should be counting the number of sceanrios executed
+  .
+  So this causes giving a false-positive impression of the amount of tests in the our smoke/regression suites. 
+  
+3. 
 4.
 5.
+
+
+WFH - Work from Home. I will WFH today. 
+OOO - Out of Office. I will be OOO from Feb 23 - 25
+AFK - Away from Keyboard. 
+PTO - Paid time off. PTO today. 
+EOD - End of Day. Please get it done by EOD.
+EOM - End of month. End of message. 
