@@ -1,4 +1,4 @@
-@smoke
+@smoke @regression
 Feature: Amazon e-commerce Login
   Scenario: Login with valid username and valid password
     Given User JohnDoe with password abc123 is registered

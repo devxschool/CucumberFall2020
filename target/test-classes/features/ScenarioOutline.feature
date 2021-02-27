@@ -1,3 +1,4 @@
+@regression
 Feature: AppleStore with Scenario Outlines
 
   @smoke

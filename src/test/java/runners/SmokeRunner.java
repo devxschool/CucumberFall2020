@@ -32,11 +32,13 @@ import org.junit.runner.RunWith;
         //junit JSON reports are the first level of reports
         //we will need it for generating cucumber reports -> which will genarate the test repot
         //based on this .json report.
-        plugin = {"json:target/cucumber.json"},
+        plugin = {"json:target/cucumber.json"}, //this will append to the existing cucumber.json
         //generating cucumber html reports from cucumber.json file
         //html -is a face of the webpage. it's used for creating webpages. static webpage.
         format = {"pretty", "html:target/reports"}
 
+        //generate step defs for all scenarios. it doesnt have an idea about whether or not any of the
+        //scenarios have it. So it will just skip all the steps.
 //        dryRun = false
 )
 public class SmokeRunner {

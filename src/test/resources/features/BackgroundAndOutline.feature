@@ -1,3 +1,4 @@
+@regression
 Feature: Combine Scenario Outline and Background
 
 

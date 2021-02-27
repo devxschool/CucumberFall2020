@@ -1,3 +1,4 @@
+@regression
 Feature: Login Scenarios Parameterized
 
   Scenario: Login with params

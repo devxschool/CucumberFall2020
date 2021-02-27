@@ -140,3 +140,13 @@ tags - filtering our tests. if you want to exclude some tests ~@tags.
 if you want to run ||, && "";
 
 
+Petro -
+
+Data Tables in Cucumber - list of info that our tests will be running through.
+Can be converted to list of maps.
+
+They belong to only one step. example table belongs to whole scenario.
+
+Cucumber best practices that you have established during your career -
+Using Hooks separately in one class.
+Before and after hooks.

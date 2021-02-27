@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Amazon Alexa 5.8</td>
+                          <td>1</td>
+                        <td>26 Feb 2021, 20:40</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">AppleStoreSteps.appleStoreHas(int,String)</td>
+                <td>12</td>
+                <td class="duration" data-value="5768231">005ms</td>
+                <td class="duration" data-value="480685">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">AppleStoreSteps.applseStoreShouldHave(int,String)</td>
+                <td>12</td>
+                <td class="duration" data-value="18583684">018ms</td>
+                <td class="duration" data-value="1548640">001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FirstStepDef.userJohnDoeWithPasswordWrongPassLogsIn()</td>
+                <td>1</td>
+                <td class="duration" data-value="56156">000ms</td>
+                <td class="duration" data-value="56156">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FirstStepDef.userShouldBeGivenLoginErrorMessage()</td>
+                <td>2</td>
+                <td class="duration" data-value="314219">000ms</td>
+                <td class="duration" data-value="157109">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FirstStepDef.userTimAppleComWithPasswordTimceoIsRegistered()</td>
+                <td>1</td>
+                <td class="duration" data-value="66885">000ms</td>
+                <td class="duration" data-value="66885">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FirstStepDef.userTimAppleComWithPasswordTimceoLogsIn()</td>
+                <td>1</td>
+                <td class="duration" data-value="29740">000ms</td>
+                <td class="duration" data-value="29740">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FirstStepDef.userTimeAppleComShouldBeNavigatedToHomePage()</td>
+                <td>1</td>
+                <td class="duration" data-value="370123">000ms</td>
+                <td class="duration" data-value="370123">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FirstStepDef.user_JohnDoe_should_be_navigated_to_HomePage()</td>
+                <td>1</td>
+                <td class="duration" data-value="24082">000ms</td>
+                <td class="duration" data-value="24082">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FirstStepDef.user_JohnDoe_with_password_abc_is_registered(int)</td>
+                <td>2</td>
+                <td class="duration" data-value="458305">000ms</td>
+                <td class="duration" data-value="229152">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">FirstStepDef.user_JohnDoe_with_password_abc_logs_in(int)</td>
+                <td>1</td>
+                <td class="duration" data-value="129918">000ms</td>
+                <td class="duration" data-value="129918">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hooks.appleStoreSetup()</td>
+                <td>15</td>
+                <td class="duration" data-value="21074630">021ms</td>
+                <td class="duration" data-value="1404975">001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hooks.testCleanUp(Scenario)</td>
+                <td>30</td>
+                <td class="duration" data-value="14494516">014ms</td>
+                <td class="duration" data-value="483150">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">Hooks.testSetup()</td>
+                <td>29</td>
+                <td class="duration" data-value="5272802">005ms</td>
+                <td class="duration" data-value="181820">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ParamStepDefs.userBuys(int,String)</td>
+                <td>19</td>
+                <td class="duration" data-value="4374431">004ms</td>
+                <td class="duration" data-value="230233">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ParamStepDefs.userCreditStandingShouldBeA(char)</td>
+                <td>2</td>
+                <td class="duration" data-value="296125">000ms</td>
+                <td class="duration" data-value="148062">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ParamStepDefs.userShouldHave(int,String)</td>
+                <td>14</td>
+                <td class="duration" data-value="4562820">004ms</td>
+                <td class="duration" data-value="325915">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ParamStepDefs.userTotalShouldBe$(double)</td>
+                <td>4</td>
+                <td class="duration" data-value="657517">000ms</td>
+                <td class="duration" data-value="164379">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ParamStepDefs.user_should_be_navigated_to_HomePage(String)</td>
+                <td>13</td>
+                <td class="duration" data-value="1495890">001ms</td>
+                <td class="duration" data-value="115068">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ParamStepDefs.user_with_password_is_registered(String,String)</td>
+                <td>14</td>
+                <td class="duration" data-value="12743290">012ms</td>
+                <td class="duration" data-value="910235">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ParamStepDefs.user_with_password_logs_in(String,String)</td>
+                <td>14</td>
+                <td class="duration" data-value="5260362">005ms</td>
+                <td class="duration" data-value="375740">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ReportSteps.name1(double,String)</td>
+                <td>5</td>
+                <td class="duration" data-value="1206120">001ms</td>
+                <td class="duration" data-value="241224">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ReportSteps.name2()</td>
+                <td>4</td>
+                <td class="duration" data-value="109677">000ms</td>
+                <td class="duration" data-value="27419">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ReportSteps.name3(int)</td>
+                <td>4</td>
+                <td class="duration" data-value="707343">000ms</td>
+                <td class="duration" data-value="176835">000ms</td>
+                <td class="failed">75.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ReportSteps.theFollowingInvoicesAreCreated(DataTable)</td>
+                <td>1</td>
+                <td class="duration" data-value="29943504">029ms</td>
+                <td class="duration" data-value="29943504">029ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ReportSteps.theFollowingInvoicesAreCreatedMap(String,String>>)</td>
+                <td>1</td>
+                <td class="duration" data-value="155938">000ms</td>
+                <td class="duration" data-value="155938">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">ReportSteps.theFollowingInvoicesAreCreatedObject(Invoice>)</td>
+                <td>1</td>
+                <td class="duration" data-value="1456162">001ms</td>
+                <td class="duration" data-value="1456162">001ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>26</td>
+              <td>204</td>
+              <td class="duration">129ms</td>
+              <td class="duration">000ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

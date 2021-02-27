@@ -1,3 +1,4 @@
+@regression
 Feature: Test with data table
 
 

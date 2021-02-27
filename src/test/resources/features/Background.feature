@@ -5,7 +5,7 @@
   #10 have different ones.
   #create 2 feature file leverage background in one them
   #and keep the other 10 as is
-@smoke
+@smoke @regression
 Feature: Avoiding Repetition
 
     ##We can put all repeating preconditonal steps here
