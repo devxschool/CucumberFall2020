@@ -1,3 +1,7 @@
+sshConnection/AppSession.class
+sshConnection/LocalSession.class
+sshConnection/SSHSession.class
+sshConnection/Test.class
+Demo.class
 functionalities/Invoice.class
 functionalities/TaxHive.class
-Demo.class

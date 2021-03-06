@@ -150,3 +150,28 @@ They belong to only one step. example table belongs to whole scenario.
 Cucumber best practices that you have established during your career -
 Using Hooks separately in one class.
 Before and after hooks.
+
+
+Jane - What is maven?
+Building Management tool -
+
+ in pom.xml dependencies - libraries
+
+ plugins - their are similar to dependencies. they dont require extra coding. it's performed automatically
+ in the project building and maven runs them automatically.
+
+ all maven phases are run using maven plugins. each phase has a default plugin with defauls configs.
+
+
+ are responsible for generating reports in json format.
+
+
+maven phases ->
+clean  -> cleans the target code
+validate -> prepare for the new compilation
+compile -> compiles the code and creates target folder
+test -> runs specified tests under test folder
+package -> creates jar file. jar or war.
+verify -> runs extra tests. and generates reports.
+install -> pushes the jar file to local repository. snapshot-version -> temporary version.
+deploy -> push from local repository to central company repository on the cloud.

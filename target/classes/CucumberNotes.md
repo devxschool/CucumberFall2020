@@ -148,9 +148,25 @@ all of the tests in the suite.
 5.
 
 
+Running smoke or regression by passing cucumber.options vm argument in mvn command line.
+1. mvn test -Dcucumber.options="--tags=@smoke" - for smoke
+   mvn test -Dcucumber.options="--tags=@regression" - for regression
+   
+   setup -> since you are using surefire plugin which executes specified tests in the 
+   mvn test phase you should only have one TestRunner class.
+   
+
+2. Maven profiling.    
+   In maven we can have multiple profiles. 
+   each maven profile can have different build configurations. 
+   //
+
+
 WFH - Work from Home. I will WFH today. 
 OOO - Out of Office. I will be OOO from Feb 23 - 25
 AFK - Away from Keyboard. 
 PTO - Paid time off. PTO today. 
 EOD - End of Day. Please get it done by EOD.
 EOM - End of month. End of message. 
+
+

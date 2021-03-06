@@ -57,7 +57,6 @@
         <!-- plugins though dont require extra coding these are features that get executed and performed automatically as part
         of project building -->
         <plugins>
-
             <!-- sure-fire plugin is used to specify which tests
             should be run as part of test(goal) -->
             <!-- by defaul maven uses surefire plugin to execute tests.
@@ -70,8 +69,7 @@
                     <!-- which tests do you want to include in the surefire plugin run in test phase-->
                     <includes>
                         <!-- list all Junit/Or TestNG runner classes -->
-                        <include>**/SmokeRunner.java</include>
-                        <include>**/RegressionRunner.java</include>
+                        <include>**/TestRunner.java</include>
                     </includes>
                     <!-- doesnt make the build fail bc of test failures -->
                     <testFailureIgnore>true</testFailureIgnore>
@@ -110,4 +108,52 @@
             </plugin>
         </plugins>
     </build>
+
+    <!-- plugins and their configurations can be different and we can choose a specific maven build configuration
+    based on the maven profile -->
+    <!-- we need to run maven profiles because we want to diffirenciate between smoketestRunner class and RegressionRunner
+    in the surefire plugin -->
+    <!-- so each profile has different surefire plugin test include configurations -->
+    <profiles>
+        <profile>
+            <id>smoke</id>
+<!--            <activation>-->
+<!--                <activeByDefault>true</activeByDefault>-->
+<!--            </activation>-->
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.21.0</version>
+                        <configuration>
+                            <includes>
+                                <include>**/SmokeRunner.java</include>
+                            </includes>
+                            <testFailureIgnore>true</testFailureIgnore>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+
+        <profile>
+            <id>regression</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-surefire-plugin</artifactId>
+                        <version>2.21.0</version>
+                        <configuration>
+                            <includes>
+                                <include>**/RegressionRunner.java</include>
+                            </includes>
+                            <testFailureIgnore>true</testFailureIgnore>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

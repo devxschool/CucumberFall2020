@@ -47,7 +47,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8982430,
+              "duration": 178671557,
               "status": "passed"
             },
             "line": 14,
@@ -69,7 +69,7 @@
           },
           {
             "result": {
-              "duration": 180129,
+              "duration": 118781,
               "status": "passed"
             },
             "line": 15,
@@ -91,7 +91,7 @@
           },
           {
             "result": {
-              "duration": 203173,
+              "duration": 94321,
               "status": "passed"
             },
             "line": 16,
@@ -113,7 +113,7 @@
         "before": [
           {
             "result": {
-              "duration": 1740507,
+              "duration": 219665,
               "status": "passed"
             },
             "match": {
@@ -122,7 +122,7 @@
           },
           {
             "result": {
-              "duration": 1328741,
+              "duration": 48315,
               "status": "passed"
             },
             "match": {
@@ -137,7 +137,7 @@
         "after": [
           {
             "result": {
-              "duration": 8522882,
+              "duration": 89769,
               "status": "passed"
             },
             "match": {
@@ -150,7 +150,7 @@
         "steps": [
           {
             "result": {
-              "duration": 209211,
+              "duration": 605208,
               "status": "passed"
             },
             "line": 20,
@@ -172,7 +172,7 @@
           },
           {
             "result": {
-              "duration": 393984,
+              "duration": 149218,
               "status": "passed"
             },
             "line": 21,
@@ -219,7 +219,7 @@
         "steps": [
           {
             "result": {
-              "duration": 824356,
+              "duration": 129981,
               "status": "passed"
             },
             "line": 14,
@@ -241,7 +241,7 @@
           },
           {
             "result": {
-              "duration": 3409503,
+              "duration": 95884,
               "status": "passed"
             },
             "line": 15,
@@ -263,7 +263,7 @@
           },
           {
             "result": {
-              "duration": 54092,
+              "duration": 90881,
               "status": "passed"
             },
             "line": 16,
@@ -285,166 +285,7 @@
         "before": [
           {
             "result": {
-              "duration": 17573201,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.appleStoreSetup()"
-            }
-          }
-        ],
-        "line": 24,
-        "name": "Double Params - Buy functionality",
-        "description": "",
-        "id": "avoiding-repetition;double-params---buy-functionality",
-        "after": [
-          {
-            "result": {
-              "duration": 55749,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 175559,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User buys 20 \"Iphones\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "20",
-                  "offset": 10
-                },
-                {
-                  "val": "Iphones",
-                  "offset": 14
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 162520,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "User total should be $2000.55",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2000.55",
-                  "offset": 22
-                }
-              ],
-              "location": "ParamStepDefs.userTotalShouldBe$(double)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 23,
-            "name": "@ignore"
-          }
-        ]
-      },
-      {
-        "comments": [
-          {
-            "line": 11,
-            "value": "##We can put all repeating preconditonal steps here"
-          },
-          {
-            "line": 12,
-            "value": "##only one Background per file"
-          }
-        ],
-        "line": 13,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 228123,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" is registered",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_is_registered(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 74565,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" logs in",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_logs_in(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 80145,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User \"johnDoe@gmail.com\" should be navigated to HomePage",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                }
-              ],
-              "location": "ParamStepDefs.user_should_be_navigated_to_HomePage(String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 92484,
+              "duration": 55116,
               "status": "passed"
             },
             "match": {
@@ -453,7 +294,7 @@
           },
           {
             "result": {
-              "duration": 27188,
+              "duration": 32945,
               "status": "passed"
             },
             "match": {
@@ -468,7 +309,7 @@
         "after": [
           {
             "result": {
-              "duration": 30623,
+              "duration": 65284,
               "status": "passed"
             },
             "match": {
@@ -481,7 +322,7 @@
         "steps": [
           {
             "result": {
-              "duration": 137940,
+              "duration": 251074,
               "status": "passed"
             },
             "line": 29,
@@ -503,7 +344,7 @@
           },
           {
             "result": {
-              "duration": 118106,
+              "duration": 356699,
               "status": "passed"
             },
             "line": 30,
@@ -521,7 +362,7 @@
           },
           {
             "result": {
-              "duration": 178014,
+              "duration": 637199,
               "status": "passed"
             },
             "line": 31,
@@ -568,7 +409,7 @@
         "steps": [
           {
             "result": {
-              "duration": 107054,
+              "duration": 213901,
               "status": "passed"
             },
             "line": 6,
@@ -590,7 +431,7 @@
           },
           {
             "result": {
-              "duration": 61361,
+              "duration": 63281,
               "status": "passed"
             },
             "line": 7,
@@ -612,7 +453,7 @@
           },
           {
             "result": {
-              "duration": 162911,
+              "duration": 132020,
               "status": "passed"
             },
             "line": 8,
@@ -634,859 +475,7 @@
         "before": [
           {
             "result": {
-              "duration": 47394,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 19,
-        "name": "apple store buy",
-        "description": "",
-        "id": "combine-scenario-outline-and-background;apple-store-buy;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 36643,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 337676,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Apple Store has 100 \"Iphone\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "100",
-                  "offset": 16
-                },
-                {
-                  "val": "Iphone",
-                  "offset": 21
-                }
-              ],
-              "location": "AppleStoreSteps.appleStoreHas(int,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 125474,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User buys 10 \"Iphone\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 10
-                },
-                {
-                  "val": "Iphone",
-                  "offset": 14
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              2
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 119444,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User should have 10 \"Iphone\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 17
-                },
-                {
-                  "val": "Iphone",
-                  "offset": 21
-                }
-              ],
-              "location": "ParamStepDefs.userShouldHave(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              2
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 119182,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Applse Store should have 90 \"Iphone\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "90",
-                  "offset": 25
-                },
-                {
-                  "val": "Iphone",
-                  "offset": 29
-                }
-              ],
-              "location": "AppleStoreSteps.applseStoreShouldHave(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              3
-            ],
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@regression"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 235878,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" is registered",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_is_registered(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 186807,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" logs in",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_logs_in(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 79471,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User \"johnDoe@gmail.com\" should be navigated to HomePage",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                }
-              ],
-              "location": "ParamStepDefs.user_should_be_navigated_to_HomePage(String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1219851,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "apple store buy",
-        "description": "",
-        "id": "combine-scenario-outline-and-background;apple-store-buy;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 4172118,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 187336,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Apple Store has 50 \"Ipad\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "50",
-                  "offset": 16
-                },
-                {
-                  "val": "Ipad",
-                  "offset": 20
-                }
-              ],
-              "location": "AppleStoreSteps.appleStoreHas(int,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 380050,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User buys 5 \"Ipad\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5",
-                  "offset": 10
-                },
-                {
-                  "val": "Ipad",
-                  "offset": 13
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              2
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 196797,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User should have 5 \"Ipad\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5",
-                  "offset": 17
-                },
-                {
-                  "val": "Ipad",
-                  "offset": 20
-                }
-              ],
-              "location": "ParamStepDefs.userShouldHave(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              2
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 14867116,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Applse Store should have 45 \"Ipad\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "45",
-                  "offset": 25
-                },
-                {
-                  "val": "Ipad",
-                  "offset": 29
-                }
-              ],
-              "location": "AppleStoreSteps.applseStoreShouldHave(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              3
-            ],
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@regression"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 196407,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" is registered",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_is_registered(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 112526,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" logs in",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_logs_in(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 80415,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User \"johnDoe@gmail.com\" should be navigated to HomePage",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                }
-              ],
-              "location": "ParamStepDefs.user_should_be_navigated_to_HomePage(String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 198466,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 21,
-        "name": "apple store buy",
-        "description": "",
-        "id": "combine-scenario-outline-and-background;apple-store-buy;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 39161,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 470874,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Apple Store has 80 \"Watch\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "80",
-                  "offset": 16
-                },
-                {
-                  "val": "Watch",
-                  "offset": 20
-                }
-              ],
-              "location": "AppleStoreSteps.appleStoreHas(int,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 539950,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User buys 10 \"Watch\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 10
-                },
-                {
-                  "val": "Watch",
-                  "offset": 14
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              2
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 120150,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User should have 10 \"Watch\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 17
-                },
-                {
-                  "val": "Watch",
-                  "offset": 21
-                }
-              ],
-              "location": "ParamStepDefs.userShouldHave(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              2
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 92318,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Applse Store should have 70 \"Watch\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "70",
-                  "offset": 25
-                },
-                {
-                  "val": "Watch",
-                  "offset": 29
-                }
-              ],
-              "location": "AppleStoreSteps.applseStoreShouldHave(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              3
-            ],
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@regression"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 485006,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" is registered",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_is_registered(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 59392,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" logs in",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_logs_in(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 41959,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User \"johnDoe@gmail.com\" should be navigated to HomePage",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                }
-              ],
-              "location": "ParamStepDefs.user_should_be_navigated_to_HomePage(String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 652586,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "apple store buy",
-        "description": "",
-        "id": "combine-scenario-outline-and-background;apple-store-buy;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 24953,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 156153,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "Apple Store has 11 \"Mac\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "11",
-                  "offset": 16
-                },
-                {
-                  "val": "Mac",
-                  "offset": 20
-                }
-              ],
-              "location": "AppleStoreSteps.appleStoreHas(int,String)"
-            },
-            "matchedColumns": [
-              0,
-              1
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 374024,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "User buys 10 \"Mac\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 10
-                },
-                {
-                  "val": "Mac",
-                  "offset": 14
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              2
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 123421,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "User should have 10 \"Mac\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 17
-                },
-                {
-                  "val": "Mac",
-                  "offset": 21
-                }
-              ],
-              "location": "ParamStepDefs.userShouldHave(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              2
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 107307,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "Applse Store should have 1 \"Mac\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 25
-                },
-                {
-                  "val": "Mac",
-                  "offset": 28
-                }
-              ],
-              "location": "AppleStoreSteps.applseStoreShouldHave(int,String)"
-            },
-            "matchedColumns": [
-              1,
-              3
-            ],
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 1,
-            "name": "@regression"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 95371,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" is registered",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_is_registered(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 48286,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" logs in",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_logs_in(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 36134,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User \"johnDoe@gmail.com\" should be navigated to HomePage",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                }
-              ],
-              "location": "ParamStepDefs.user_should_be_navigated_to_HomePage(String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 35920,
+              "duration": 69478,
               "status": "passed"
             },
             "match": {
@@ -1495,7 +484,7 @@
           },
           {
             "result": {
-              "duration": 16537,
+              "duration": 37472,
               "status": "passed"
             },
             "match": {
@@ -1510,7 +499,7 @@
         "after": [
           {
             "result": {
-              "duration": 24369,
+              "duration": 52800,
               "status": "passed"
             },
             "match": {
@@ -1523,7 +512,7 @@
         "steps": [
           {
             "result": {
-              "duration": 643978,
+              "duration": 184195,
               "status": "passed"
             },
             "line": 26,
@@ -1545,7 +534,7 @@
           },
           {
             "result": {
-              "duration": 115019,
+              "duration": 212387,
               "status": "passed"
             },
             "line": 27,
@@ -1593,7 +582,7 @@
         "before": [
           {
             "result": {
-              "duration": 380626,
+              "duration": 59716,
               "status": "passed"
             },
             "match": {
@@ -1602,7 +591,7 @@
           },
           {
             "result": {
-              "duration": 128924,
+              "duration": 34858,
               "status": "passed"
             },
             "match": {
@@ -1617,7 +606,7 @@
         "after": [
           {
             "result": {
-              "duration": 33169,
+              "duration": 216239,
               "status": "passed"
             },
             "match": {
@@ -1630,7 +619,7 @@
         "steps": [
           {
             "result": {
-              "duration": 438272,
+              "duration": 372679,
               "status": "passed"
             },
             "line": 7,
@@ -1652,7 +641,7 @@
           },
           {
             "result": {
-              "duration": 170311,
+              "duration": 197866,
               "status": "passed"
             },
             "line": 8,
@@ -1674,7 +663,7 @@
           },
           {
             "result": {
-              "duration": 282195,
+              "duration": 209974,
               "status": "passed"
             },
             "line": 9,
@@ -1696,7 +685,7 @@
           },
           {
             "result": {
-              "duration": 148398,
+              "duration": 252840,
               "status": "passed"
             },
             "line": 10,
@@ -1718,7 +707,7 @@
           },
           {
             "result": {
-              "duration": 166944,
+              "duration": 92302,
               "status": "passed"
             },
             "line": 11,
@@ -1740,7 +729,7 @@
           },
           {
             "result": {
-              "duration": 24408,
+              "duration": 339066,
               "status": "passed"
             },
             "line": 12,
@@ -1752,7 +741,7 @@
           },
           {
             "result": {
-              "duration": 420350,
+              "duration": 1788987,
               "error_message": "java.lang.AssertionError: expected:\u003c4222.0\u003e but was:\u003c834.0\u003e\n\tat org.junit.Assert.fail(Assert.java:88)\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\n\tat org.junit.Assert.assertEquals(Assert.java:553)\n\tat org.junit.Assert.assertEquals(Assert.java:683)\n\tat step_defs.ReportSteps.name3(ReportSteps.java:49)\n\tat ✽.Then User should have 4222 in total invoices report(features/DataTables.feature:13)\n",
               "status": "failed"
             },
@@ -1778,228 +767,10 @@
         ]
       },
       {
-        "comments": [
-          {
-            "line": 15,
-            "value": "##List\u003cList\u003cString\u003e\u003e"
-          },
-          {
-            "line": 16,
-            "value": "##2,1"
-          }
-        ],
         "before": [
           {
             "result": {
-              "duration": 61583,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Data Table - DataTable -\u003e List\u003cMap\u003cString, String\u003e\u003e",
-        "description": "",
-        "id": "test-with-data-table;data-table---datatable--\u003e-list\u003cmap\u003cstring,-string\u003e\u003e",
-        "after": [
-          {
-            "result": {
-              "duration": 33361,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 29943504,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "the following invoices are created",
-            "match": {
-              "location": "ReportSteps.theFollowingInvoicesAreCreated(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "amount",
-                  "name"
-                ],
-                "line": 19
-              },
-              {
-                "cells": [
-                  "200",
-                  "Spoon"
-                ],
-                "line": 20
-              },
-              {
-                "cells": [
-                  "222",
-                  "Iphone"
-                ],
-                "line": 21
-              },
-              {
-                "cells": [
-                  "100",
-                  "Ipad"
-                ],
-                "line": 22
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 32364,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "User sends the above invoices",
-            "match": {
-              "location": "ReportSteps.name2()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 114552,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User should have 522 in total invoices report",
-            "match": {
-              "arguments": [
-                {
-                  "val": "522",
-                  "offset": 17
-                }
-              ],
-              "location": "ReportSteps.name3(int)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 95977,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "Data Table - List\u003cMap\u003cString, String\u003e\u003e right away",
-        "description": "",
-        "id": "test-with-data-table;data-table---list\u003cmap\u003cstring,-string\u003e\u003e-right-away",
-        "after": [
-          {
-            "result": {
-              "duration": 26795,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 155938,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "the following invoices are created map",
-            "match": {
-              "location": "ReportSteps.theFollowingInvoicesAreCreatedMap(String,String\u003e\u003e)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "amount",
-                  "name"
-                ],
-                "line": 29
-              },
-              {
-                "cells": [
-                  "200",
-                  "Spoon"
-                ],
-                "line": 30
-              },
-              {
-                "cells": [
-                  "222",
-                  "Iphone"
-                ],
-                "line": 31
-              },
-              {
-                "cells": [
-                  "100",
-                  "Ipad"
-                ],
-                "line": 32
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 24895,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "User sends the above invoices",
-            "match": {
-              "location": "ReportSteps.name2()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 85982,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "User should have 522 in total invoices report",
-            "match": {
-              "arguments": [
-                {
-                  "val": "522",
-                  "offset": 17
-                }
-              ],
-              "location": "ReportSteps.name3(int)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 32964,
+              "duration": 162049,
               "status": "passed"
             },
             "match": {
@@ -2008,7 +779,7 @@
           },
           {
             "result": {
-              "duration": 15336,
+              "duration": 86834,
               "status": "passed"
             },
             "match": {
@@ -2023,7 +794,7 @@
         "after": [
           {
             "result": {
-              "duration": 27405,
+              "duration": 109651,
               "status": "passed"
             },
             "match": {
@@ -2036,7 +807,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1456162,
+              "duration": 18795220,
               "status": "passed"
             },
             "line": 38,
@@ -2078,7 +849,7 @@
           },
           {
             "result": {
-              "duration": 28010,
+              "duration": 118880,
               "status": "passed"
             },
             "line": 43,
@@ -2090,7 +861,7 @@
           },
           {
             "result": {
-              "duration": 86459,
+              "duration": 289803,
               "status": "passed"
             },
             "line": 44,
@@ -2134,7 +905,7 @@
         "before": [
           {
             "result": {
-              "duration": 75230,
+              "duration": 213327,
               "status": "passed"
             },
             "match": {
@@ -2143,7 +914,7 @@
           },
           {
             "result": {
-              "duration": 20887,
+              "duration": 51003,
               "status": "passed"
             },
             "match": {
@@ -2158,7 +929,7 @@
         "after": [
           {
             "result": {
-              "duration": 144623,
+              "duration": 86226,
               "status": "passed"
             },
             "match": {
@@ -2171,7 +942,7 @@
         "steps": [
           {
             "result": {
-              "duration": 273500,
+              "duration": 355803,
               "status": "passed"
             },
             "line": 4,
@@ -2189,7 +960,7 @@
           },
           {
             "result": {
-              "duration": 129918,
+              "duration": 269065,
               "status": "passed"
             },
             "line": 5,
@@ -2207,7 +978,7 @@
           },
           {
             "result": {
-              "duration": 24082,
+              "duration": 96555,
               "status": "passed"
             },
             "line": 6,
@@ -2237,7 +1008,7 @@
         "before": [
           {
             "result": {
-              "duration": 266321,
+              "duration": 352061,
               "status": "passed"
             },
             "match": {
@@ -2246,7 +1017,7 @@
           },
           {
             "result": {
-              "duration": 44901,
+              "duration": 134789,
               "status": "passed"
             },
             "match": {
@@ -2261,7 +1032,7 @@
         "after": [
           {
             "result": {
-              "duration": 23606,
+              "duration": 55251,
               "status": "passed"
             },
             "match": {
@@ -2274,7 +1045,7 @@
         "steps": [
           {
             "result": {
-              "duration": 184805,
+              "duration": 610237,
               "status": "passed"
             },
             "line": 14,
@@ -2292,7 +1063,7 @@
           },
           {
             "result": {
-              "duration": 56156,
+              "duration": 98112,
               "status": "passed"
             },
             "line": 15,
@@ -2304,7 +1075,7 @@
           },
           {
             "result": {
-              "duration": 213764,
+              "duration": 65025,
               "status": "passed"
             },
             "line": 16,
@@ -2320,7 +1091,7 @@
         "before": [
           {
             "result": {
-              "duration": 24945,
+              "duration": 59690,
               "status": "passed"
             },
             "match": {
@@ -2329,7 +1100,7 @@
           },
           {
             "result": {
-              "duration": 17559,
+              "duration": 46667,
               "status": "passed"
             },
             "match": {
@@ -2344,7 +1115,7 @@
         "after": [
           {
             "result": {
-              "duration": 221030,
+              "duration": 51762,
               "status": "passed"
             },
             "match": {
@@ -2357,7 +1128,7 @@
         "steps": [
           {
             "result": {
-              "duration": 66885,
+              "duration": 741976,
               "status": "passed"
             },
             "line": 21,
@@ -2369,7 +1140,7 @@
           },
           {
             "result": {
-              "duration": 29740,
+              "duration": 87579,
               "status": "passed"
             },
             "line": 22,
@@ -2381,7 +1152,7 @@
           },
           {
             "result": {
-              "duration": 370123,
+              "duration": 87776,
               "status": "passed"
             },
             "line": 23,
@@ -2397,7 +1168,7 @@
         "before": [
           {
             "result": {
-              "duration": 434444,
+              "duration": 56549,
               "status": "passed"
             },
             "match": {
@@ -2406,7 +1177,7 @@
           },
           {
             "result": {
-              "duration": 147923,
+              "duration": 45917,
               "status": "passed"
             },
             "match": {
@@ -2421,7 +1192,7 @@
         "after": [
           {
             "result": {
-              "duration": 44595,
+              "duration": 86816,
               "status": "passed"
             },
             "match": {
@@ -2491,101 +1262,7 @@
         "before": [
           {
             "result": {
-              "duration": 199268,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 4,
-        "name": "Login with params",
-        "description": "",
-        "id": "login-scenarios-parameterized;login-with-params",
-        "after": [
-          {
-            "result": {
-              "duration": 50465,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 282365,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User \"tim@apple.com\" with password \"timceo\" is registered",
-            "match": {
-              "arguments": [
-                {
-                  "val": "tim@apple.com",
-                  "offset": 6
-                },
-                {
-                  "val": "timceo",
-                  "offset": 36
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_is_registered(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 166815,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "User \"tim@apple.com\" with password \"timceo\" logs in",
-            "match": {
-              "arguments": [
-                {
-                  "val": "tim@apple.com",
-                  "offset": 6
-                },
-                {
-                  "val": "timceo",
-                  "offset": 36
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_logs_in(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 49563,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "User \"time@apple.com\" should be navigated to HomePage",
-            "match": {
-              "arguments": [
-                {
-                  "val": "time@apple.com",
-                  "offset": 6
-                }
-              ],
-              "location": "ParamStepDefs.user_should_be_navigated_to_HomePage(String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 80163,
+              "duration": 52299,
               "status": "passed"
             },
             "match": {
@@ -2594,7 +1271,7 @@
           },
           {
             "result": {
-              "duration": 43705,
+              "duration": 30541,
               "status": "passed"
             },
             "match": {
@@ -2609,7 +1286,7 @@
         "after": [
           {
             "result": {
-              "duration": 32773,
+              "duration": 67369,
               "status": "passed"
             },
             "match": {
@@ -2622,7 +1299,7 @@
         "steps": [
           {
             "result": {
-              "duration": 158288,
+              "duration": 144905,
               "status": "passed"
             },
             "line": 11,
@@ -2644,7 +1321,7 @@
           },
           {
             "result": {
-              "duration": 59448,
+              "duration": 82728,
               "status": "passed"
             },
             "line": 12,
@@ -2666,7 +1343,7 @@
           },
           {
             "result": {
-              "duration": 60106,
+              "duration": 133599,
               "status": "passed"
             },
             "line": 13,
@@ -2694,95 +1371,7 @@
         "before": [
           {
             "result": {
-              "duration": 53192,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 16,
-        "name": "Negative",
-        "description": "",
-        "id": "login-scenarios-parameterized;negative",
-        "after": [
-          {
-            "result": {
-              "duration": 33074,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 533605,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "User \"bill@outlook.com\" with password \"helloWorld123\" is registered",
-            "match": {
-              "arguments": [
-                {
-                  "val": "bill@outlook.com",
-                  "offset": 6
-                },
-                {
-                  "val": "helloWorld123",
-                  "offset": 39
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_is_registered(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 471723,
-              "status": "passed"
-            },
-            "line": 18,
-            "name": "User \"bill@outlook.com\" with password \"1242World\" logs in",
-            "match": {
-              "arguments": [
-                {
-                  "val": "bill@outlook.com",
-                  "offset": 6
-                },
-                {
-                  "val": "1242World",
-                  "offset": 39
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_logs_in(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 100455,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "User should be given login error message",
-            "match": {
-              "location": "FirstStepDef.userShouldBeGivenLoginErrorMessage()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 32954,
+              "duration": 109553,
               "status": "passed"
             },
             "match": {
@@ -2797,7 +1386,7 @@
         "after": [
           {
             "result": {
-              "duration": 36385,
+              "duration": 95349,
               "status": "passed"
             },
             "match": {
@@ -2810,7 +1399,7 @@
         "steps": [
           {
             "result": {
-              "duration": 327476,
+              "duration": 313859,
               "status": "passed"
             },
             "line": 23,
@@ -2832,7 +1421,7 @@
           },
           {
             "result": {
-              "duration": 90527,
+              "duration": 119661,
               "status": "passed"
             },
             "line": 24,
@@ -2854,7 +1443,7 @@
           },
           {
             "result": {
-              "duration": 465489,
+              "duration": 111272,
               "status": "passed"
             },
             "line": 25,
@@ -2872,7 +1461,7 @@
           },
           {
             "result": {
-              "duration": 136899,
+              "duration": 370782,
               "status": "passed"
             },
             "line": 26,
@@ -2899,292 +1488,6 @@
             "name": "@hello"
           }
         ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 87391,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "Double Params - Buy functionality",
-        "description": "",
-        "id": "login-scenarios-parameterized;double-params---buy-functionality",
-        "after": [
-          {
-            "result": {
-              "duration": 100229,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 187855,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" is registered",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_is_registered(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 216888,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" logs in",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_logs_in(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 149183,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "User \"johnDoe@gmail.com\" should be navigated to HomePage",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                }
-              ],
-              "location": "ParamStepDefs.user_should_be_navigated_to_HomePage(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 472382,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "User buys 20 \"Iphones\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "20",
-                  "offset": 10
-                },
-                {
-                  "val": "Iphones",
-                  "offset": 14
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 228271,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "User total should be $2000.55",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2000.55",
-                  "offset": 22
-                }
-              ],
-              "location": "ParamStepDefs.userTotalShouldBe$(double)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 38354,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 37,
-        "name": "Char Params - Buy functionality",
-        "description": "",
-        "id": "login-scenarios-parameterized;char-params---buy-functionality",
-        "after": [
-          {
-            "result": {
-              "duration": 32872,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 99076,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" is registered",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_is_registered(String,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 122392,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "User \"johnDoe@gmail.com\" with password \"ExtreamnelyHardPa$$\" logs in",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                },
-                {
-                  "val": "ExtreamnelyHardPa$$",
-                  "offset": 40
-                }
-              ],
-              "location": "ParamStepDefs.user_with_password_logs_in(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 33249,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "User \"johnDoe@gmail.com\" should be navigated to HomePage",
-            "match": {
-              "arguments": [
-                {
-                  "val": "johnDoe@gmail.com",
-                  "offset": 6
-                }
-              ],
-              "location": "ParamStepDefs.user_should_be_navigated_to_HomePage(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 116080,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "User buys 20 \"Iphones\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "20",
-                  "offset": 10
-                },
-                {
-                  "val": "Iphones",
-                  "offset": 14
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 148620,
-              "status": "passed"
-            },
-            "line": 42,
-            "name": "User total should be $2000.55",
-            "match": {
-              "arguments": [
-                {
-                  "val": "2000.55",
-                  "offset": 22
-                }
-              ],
-              "location": "ParamStepDefs.userTotalShouldBe$(double)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 118111,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "User credit standing should be \u0027A\u0027",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A",
-                  "offset": 32
-                }
-              ],
-              "location": "ParamStepDefs.userCreditStandingShouldBeA(char)"
-            },
-            "keyword": "And "
-          }
-        ]
       }
     ],
     "name": "Login Scenarios Parameterized",
@@ -3206,7 +1509,7 @@
         "before": [
           {
             "result": {
-              "duration": 112302,
+              "duration": 313570,
               "status": "passed"
             },
             "match": {
@@ -3215,7 +1518,7 @@
           },
           {
             "result": {
-              "duration": 71135,
+              "duration": 119897,
               "status": "passed"
             },
             "match": {
@@ -3230,7 +1533,7 @@
         "after": [
           {
             "result": {
-              "duration": 186259,
+              "duration": 187321,
               "status": "passed"
             },
             "match": {
@@ -3243,7 +1546,7 @@
         "steps": [
           {
             "result": {
-              "duration": 362872,
+              "duration": 644719,
               "status": "passed"
             },
             "line": 6,
@@ -3269,7 +1572,7 @@
           },
           {
             "result": {
-              "duration": 97857,
+              "duration": 421889,
               "status": "passed"
             },
             "line": 7,
@@ -3295,7 +1598,7 @@
           },
           {
             "result": {
-              "duration": 112285,
+              "duration": 358433,
               "status": "passed"
             },
             "line": 8,
@@ -3321,7 +1624,7 @@
           },
           {
             "result": {
-              "duration": 113274,
+              "duration": 518466,
               "status": "passed"
             },
             "line": 9,
@@ -3361,7 +1664,7 @@
         "before": [
           {
             "result": {
-              "duration": 101515,
+              "duration": 104584,
               "status": "passed"
             },
             "match": {
@@ -3370,7 +1673,7 @@
           },
           {
             "result": {
-              "duration": 17585,
+              "duration": 69416,
               "status": "passed"
             },
             "match": {
@@ -3385,7 +1688,7 @@
         "after": [
           {
             "result": {
-              "duration": 27663,
+              "duration": 601867,
               "status": "passed"
             },
             "match": {
@@ -3398,7 +1701,7 @@
         "steps": [
           {
             "result": {
-              "duration": 123970,
+              "duration": 382930,
               "status": "passed"
             },
             "line": 6,
@@ -3424,7 +1727,7 @@
           },
           {
             "result": {
-              "duration": 94591,
+              "duration": 1066676,
               "status": "passed"
             },
             "line": 7,
@@ -3450,7 +1753,7 @@
           },
           {
             "result": {
-              "duration": 99973,
+              "duration": 400804,
               "status": "passed"
             },
             "line": 8,
@@ -3476,7 +1779,7 @@
           },
           {
             "result": {
-              "duration": 90116,
+              "duration": 216764,
               "status": "passed"
             },
             "line": 9,
@@ -3516,7 +1819,7 @@
         "before": [
           {
             "result": {
-              "duration": 67299,
+              "duration": 76593,
               "status": "passed"
             },
             "match": {
@@ -3525,7 +1828,7 @@
           },
           {
             "result": {
-              "duration": 43304,
+              "duration": 30817,
               "status": "passed"
             },
             "match": {
@@ -3540,7 +1843,7 @@
         "after": [
           {
             "result": {
-              "duration": 26328,
+              "duration": 102457,
               "status": "passed"
             },
             "match": {
@@ -3553,7 +1856,7 @@
         "steps": [
           {
             "result": {
-              "duration": 173452,
+              "duration": 1146923,
               "status": "passed"
             },
             "line": 6,
@@ -3579,7 +1882,7 @@
           },
           {
             "result": {
-              "duration": 94575,
+              "duration": 594946,
               "status": "passed"
             },
             "line": 7,
@@ -3605,7 +1908,7 @@
           },
           {
             "result": {
-              "duration": 100060,
+              "duration": 1085893,
               "status": "passed"
             },
             "line": 8,
@@ -3631,7 +1934,7 @@
           },
           {
             "result": {
-              "duration": 95830,
+              "duration": 775285,
               "status": "passed"
             },
             "line": 9,
@@ -3671,7 +1974,7 @@
         "before": [
           {
             "result": {
-              "duration": 56709,
+              "duration": 86470,
               "status": "passed"
             },
             "match": {
@@ -3680,7 +1983,7 @@
           },
           {
             "result": {
-              "duration": 45611,
+              "duration": 171363,
               "status": "passed"
             },
             "match": {
@@ -3695,7 +1998,7 @@
         "after": [
           {
             "result": {
-              "duration": 216884,
+              "duration": 44503,
               "status": "passed"
             },
             "match": {
@@ -3708,7 +2011,7 @@
         "steps": [
           {
             "result": {
-              "duration": 180092,
+              "duration": 264793,
               "status": "passed"
             },
             "line": 6,
@@ -3734,7 +2037,7 @@
           },
           {
             "result": {
-              "duration": 109697,
+              "duration": 282059,
               "status": "passed"
             },
             "line": 7,
@@ -3760,7 +2063,7 @@
           },
           {
             "result": {
-              "duration": 1585871,
+              "duration": 145710,
               "status": "passed"
             },
             "line": 8,
@@ -3786,7 +2089,7 @@
           },
           {
             "result": {
-              "duration": 810450,
+              "duration": 130191,
               "status": "passed"
             },
             "line": 9,
@@ -3819,486 +2122,6 @@
           {
             "line": 1,
             "name": "@regression"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 108515,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "1",
-        "description": "",
-        "id": "applestore-with-scenario-outlines;1",
-        "after": [
-          {
-            "result": {
-              "duration": 72256,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 973266,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "Apple Store has 100 \"Iphone\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "100",
-                  "offset": 16
-                },
-                {
-                  "val": "Iphone",
-                  "offset": 21
-                }
-              ],
-              "location": "AppleStoreSteps.appleStoreHas(int,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 193334,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User buys 10 \"Iphone\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 10
-                },
-                {
-                  "val": "Iphone",
-                  "offset": 14
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 301813,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User should have 10 \"Iphone\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 17
-                },
-                {
-                  "val": "Iphone",
-                  "offset": 21
-                }
-              ],
-              "location": "ParamStepDefs.userShouldHave(int,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 353633,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "Applse Store should have 90 \"Iphone\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "90",
-                  "offset": 25
-                },
-                {
-                  "val": "Iphone",
-                  "offset": 29
-                }
-              ],
-              "location": "AppleStoreSteps.applseStoreShouldHave(int,String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 125041,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "2",
-        "description": "",
-        "id": "applestore-with-scenario-outlines;2",
-        "after": [
-          {
-            "result": {
-              "duration": 124451,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 246279,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "Apple Store has 50 \"Ipads\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "50",
-                  "offset": 16
-                },
-                {
-                  "val": "Ipads",
-                  "offset": 20
-                }
-              ],
-              "location": "AppleStoreSteps.appleStoreHas(int,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 111009,
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "User buys 5 \"Ipads\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5",
-                  "offset": 10
-                },
-                {
-                  "val": "Ipads",
-                  "offset": 13
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 870102,
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "User should have 5 \"Ipads\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "5",
-                  "offset": 17
-                },
-                {
-                  "val": "Ipads",
-                  "offset": 20
-                }
-              ],
-              "location": "ParamStepDefs.userShouldHave(int,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 912346,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "Applse Store should have 45 \"Ipads\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "45",
-                  "offset": 25
-                },
-                {
-                  "val": "Ipads",
-                  "offset": 29
-                }
-              ],
-              "location": "AppleStoreSteps.applseStoreShouldHave(int,String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 147954,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 36,
-        "name": "3",
-        "description": "",
-        "id": "applestore-with-scenario-outlines;3",
-        "after": [
-          {
-            "result": {
-              "duration": 32549,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1236777,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "Apple Store has 80 \"Watches\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "80",
-                  "offset": 16
-                },
-                {
-                  "val": "Watches",
-                  "offset": 20
-                }
-              ],
-              "location": "AppleStoreSteps.appleStoreHas(int,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 175210,
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "User buys 10 \"Watches\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 10
-                },
-                {
-                  "val": "Watches",
-                  "offset": 14
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 212725,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "User should have 10 \"Iphones\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 17
-                },
-                {
-                  "val": "Iphones",
-                  "offset": 21
-                }
-              ],
-              "location": "ParamStepDefs.userShouldHave(int,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 205787,
-              "status": "passed"
-            },
-            "line": 40,
-            "name": "Applse Store should have 70 \"Watches\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "70",
-                  "offset": 25
-                },
-                {
-                  "val": "Watches",
-                  "offset": 29
-                }
-              ],
-              "location": "AppleStoreSteps.applseStoreShouldHave(int,String)"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 234940,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testSetup()"
-            }
-          }
-        ],
-        "line": 43,
-        "name": "4",
-        "description": "",
-        "id": "applestore-with-scenario-outlines;4",
-        "after": [
-          {
-            "result": {
-              "duration": 61246,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hooks.testCleanUp(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1319484,
-              "status": "passed"
-            },
-            "line": 44,
-            "name": "Apple Store has 11 \"Mac\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "11",
-                  "offset": 16
-                },
-                {
-                  "val": "Mac",
-                  "offset": 20
-                }
-              ],
-              "location": "AppleStoreSteps.appleStoreHas(int,String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 186611,
-              "status": "passed"
-            },
-            "line": 45,
-            "name": "User buys 10 \"Mac\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 10
-                },
-                {
-                  "val": "Mac",
-                  "offset": 14
-                }
-              ],
-              "location": "ParamStepDefs.userBuys(int,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 211176,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "User should have 10 \"Mac\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "10",
-                  "offset": 17
-                },
-                {
-                  "val": "Mac",
-                  "offset": 21
-                }
-              ],
-              "location": "ParamStepDefs.userShouldHave(int,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 816325,
-              "status": "passed"
-            },
-            "line": 47,
-            "name": "Applse Store should have 1 \"Mac\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 25
-                },
-                {
-                  "val": "Mac",
-                  "offset": 28
-                }
-              ],
-              "location": "AppleStoreSteps.applseStoreShouldHave(int,String)"
-            },
-            "keyword": "And "
           }
         ]
       }

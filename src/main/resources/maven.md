@@ -75,3 +75,9 @@ Each enviroment dev, qa servers have maven installed in them.
 on qa02 server QAs would only need to run a command(specific to a company)
 to pull the application version you are looking to install on the server from
 company central repo. Application Deployement - application installation.
+
+
+
+Maven commands(goals in terminal) can only be sent in a directory where pom.xml file is located.
+
+OS(Unix) Aliases - are something like variable in java which point to some program(executable) files. 

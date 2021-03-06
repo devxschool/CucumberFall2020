@@ -19,6 +19,7 @@ public class SSHSession implements AppSession{
 
     @Override
     public boolean stopJavaApp(String appName) {
+        //
         return false;
     }
 }
